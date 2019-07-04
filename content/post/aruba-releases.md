@@ -1,7 +1,7 @@
 +++
-showonlyimage = true
+showonlyimage = false
 draft = false
-image = "img/default.jpg"
+image = ""
 date = "2018-07-02T10:29:23+05:30"
 title = "OpenSDS Aruba Released"
 description = "Aruba Release Notes"

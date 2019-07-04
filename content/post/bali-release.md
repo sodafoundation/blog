@@ -1,7 +1,7 @@
 +++
-showonlyimage = true
+showonlyimage = false
 draft = false
-image = "img/default.jpg"
+image = ""
 date = "2018-12-17T10:29:23+05:30"
 title = "OpenSDS Bali Released"
 description = "Bali Release Notes"
