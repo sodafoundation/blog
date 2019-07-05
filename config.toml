@@ -1,5 +1,5 @@
 baseurl = "https://opensds-blog-v2.netlify.com/"
-title = "OpenSDS"
+title = "OpenSDS Blog"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
@@ -20,6 +20,8 @@ paginate = 5 #frontpage pagination
     useSessionStorage = false
 
 [params]
+  # Site Logo
+  logo = "/img/logo.png"
   # Unmark to use post folder for images. Default is static folder.
   #usepostimgfolder = true
   slogan = "The Open Autonomous Data Platform"
