@@ -24,7 +24,7 @@ paginate = 5 #frontpage pagination
   logo = "/img/logo.png"
   # Unmark to use post folder for images. Default is static folder.
   #usepostimgfolder = true
-  slogan = "The Open Autonomous Data Platform"
+  slogan = "The official blog for the OpenSDS project."
   description = "An open source community working under The Linux Foundation to address storage integration challenges in scale-out cloud native environments. Its vision is to connect siloed data solutions to build a self governed and intelligent data platform." # meta description
   # You need to set author to have an author bio. If you have a writer in the markdown file it will override this.
   author = "OpenSDS"
