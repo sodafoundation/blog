@@ -1,0 +1,58 @@
+<div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    <a href="{{ .Site.BaseURL | relLangURL }}">
+      {{ if (ne .Site.Params.Logo "" ) }}
+      <div class="logo-container">
+        <img  src="{{ .Site.Params.Logo | absURL }}" width="150">
+      </div>  
+      {{ end }}
+      {{ if and ( eq .Site.Params.Logo "" ) ( ne .Site.Title "" ) }}
+        {{ .Site.Title }} 
+      {{ end }}
+    </a>
+  </div>
+    
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    {{ with .Site.Params.Slogan }}
+    <p class="site-description">{{ . | default "" | safeHTML }}</p>
+    {{ end }}
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        {{ $page := . }}
+        {{ $categories := .Site.Taxonomies.categories }}
+        {{ range .Site.Menus.main }}
+        <li class='menu-item {{ if eq ("/") (.URL) }}menu-item-type-custom menu-item-object-custom{{ else }}menu-item-type-post_type menu-item-object-page{{ end }} {{ if $page.IsMenuCurrent "main" . }}current-menu-item current_page_item{{ end }}'>
+          <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+          {{ if eq .Name "Categories" }}
+            <ul id="menu-secondary-items" class="sub-menu">
+                {{ range $name, $taxonomy := $categories }}
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+                </li>
+                {{ end }}
+        
+            </ul>
+          {{ end }}
+          {{ if .HasChildren }}
+          <ul class="sub-menu">
+            {{ range .Children }}
+            <li class='menu-item {{ if eq ("/") (.URL) }}menu-item-type-custom menu-item-object-custom{{ else }}menu-item-type-post_type menu-item-object-page{{ end }} {{ if $page.IsMenuCurrent "main" . }}current-menu-item current_page_item{{ end }}'>
+              <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </li>
+        {{ end }}
+        
+      </ul>
+    </div>
+
+  </div>
