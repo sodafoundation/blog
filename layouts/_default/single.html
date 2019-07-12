@@ -27,7 +27,7 @@
           <span class="date">{{ .Date.Format "02 January" }}</span>	<span> / </span>
 
           <span class="author">
-            <a target="_blank" href="{{ .Params.writerLink | default .Site.Params.authorlink | absURL }}" title="Posts by {{ .Params.writer | default .Site.Params.author }}" rel="author">{{ .Params.writer | default .Site.Params.author }}</a>
+            <a target="_blank" href="{{ .Params.writer_link | default .Site.Params.authorlink | absURL }}" title="Posts by {{ .Params.writer | default .Site.Params.author }}" rel="author">{{ .Params.writer | default .Site.Params.author }}</a>
           </span>
 
 
@@ -85,19 +85,19 @@
 <div class="author-meta">
 
   <div class="author">
-    {{ if and (isset .Params "writer") .Params.writerEmail }}
-      <img alt='{{ .Params.writer | default .Site.Params.author }}' src="https://www.gravatar.com/avatar/{{ md5 .Params.writerEmail }}?s=100&d=identicon" class='avatar avatar-72 photo' height='72' width='72'>
+    {{ if and (isset .Params "writer") .Params.writer_email }}
+      <img alt='{{ .Params.writer | default .Site.Params.author }}' src="https://www.gravatar.com/avatar/{{ md5 .Params.writer_email }}?s=100&d=identicon" class='avatar avatar-72 photo' height='72' width='72'>
     {{ else if and (isset .Params "writer") $writer.email }}
     <img alt='{{ .Params.writer | default .Site.Params.author }}' src="https://www.gravatar.com/avatar/{{ md5 $writer.email }}?s=100&d=identicon" class='avatar avatar-72 photo' height='72' width='72'>
     {{ else }}
       <img alt='{{ .Params.writer | default .Site.Params.author }}' src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=100&d=identicon" class='avatar avatar-72 photo' height='72' width='72'>
     {{ end }}
     <span>
-      Written by:<a target="_blank" href="{{ .Params.writerLink | default .Site.Params.authorlink | absURL}}" title="Posts by {{ .Params.writer | default .Site.Params.author }}" rel="author">{{ .Params.writer | default .Site.Params.author }}</a> </span>
+      Written by:<a target="_blank" href="{{ .Params.writer_link | default .Site.Params.authorlink | absURL}}" title="Posts by {{ .Params.writer | default .Site.Params.author }}" rel="author">{{ .Params.writer | default .Site.Params.author }}</a> </span>
     </div>
     <div class="bio">
-      {{ if and (isset .Params "writer") .Params.writerBio }}
-        <p>{{ .Params.writerBio | default "" | safeHTML }}</p>
+      {{ if and (isset .Params "writer") .Params.writer_bio }}
+        <p>{{ .Params.writer_bio | default "" | safeHTML }}</p>
       {{ else if and (isset .Params "writer") $writer.bio }}
       {{ range $writer.bio  }}
       <p>{{ . | default "" | safeHTML }}</p>
@@ -108,9 +108,9 @@
       {{ end }}
       {{ end }}
   {{ if isset .Params "writer" }}
-    {{ if .Params.writerFacebook }}
+    {{ if .Params.writer_facebook }}
       <a class="facebook" target="_blank"
-      href="{{ .Params.writerFacebook }}">
+      href="{{ .Params.writer_facebook }}">
       <i class="fab fa-facebook-f"
       title="facebook icon"></i>
       </a>
@@ -122,9 +122,9 @@
     </a>
     {{end}}
 
-    {{ if .Params.writerGoogleplus }}
+    {{ if .Params.writer_googleplus }}
     <a class="googleplus" target="_blank"
-    href="{{ .Params.writerGoogleplus }}">
+    href="{{ .Params.writer_googleplus }}">
     <i class="fab fa-google-plus-g"
     title="googleplus icon"></i>
     </a>
@@ -136,9 +136,9 @@
     </a>
     {{end}}
 
-  {{ if .Params.writerTwitter }}
+  {{ if .Params.writer_twitter }}
     <a class="twitter" target="_blank"
-    href="{{ .Params.writerTwitter }}">
+    href="{{ .Params.writer_twitter }}">
     <i class="fab fa-twitter-square"
     title="twitter icon"></i>
   </a>
@@ -149,9 +149,9 @@
   title="twitter icon"></i>
 </a>
 {{end}}
-{{ if .Params.writerLinkedin }}
+{{ if .Params.writer_linkedin }}
 <a class="linkedin" target="_blank"
-href="{{ .Params.writerLinkedin }}">
+href="{{ .Params.writer_linkedin }}">
 <i class="fab fa-linkedin"
 title="linkedin icon"></i>
 </a>
@@ -163,9 +163,9 @@ title="linkedin icon"></i>
 </a>
 {{end}}
 
-{{ if .Params.writerEmail }}
+{{ if .Params.writer_email }}
 <a class="email" target="_blank"
-href="mailto:{{ .Params.writerEmail }}">
+href="mailto:{{ .Params.writer_email }}">
 <i class="fas fa-envelope"
 title="email icon"></i>
 </a>
@@ -177,9 +177,9 @@ title="email icon"></i>
 </a>
 {{end}}
 
-{{ if .Params.writerInstagram }}
+{{ if .Params.writer_instagram }}
 <a class="instagram" target="_blank"
-href="{{ .Params.writerInstagram }}">
+href="{{ .Params.writer_instagram }}">
 <i class="fab fa-instagram"
 title="instagram icon"></i>
 </a>
@@ -191,9 +191,9 @@ title="instagram icon"></i>
 </a>
 {{end}}
 
-{{ if .Params.writerStackoverflow }}
+{{ if .Params.writer_stackoverflow }}
 <a class="stackoverflow" target="_blank"
-href="{{ .Params.writerStackoverflow }}">
+href="{{ .Params.writer_stackoverflow }}">
 <i class="fab fa-stack-overflow"
 title="stackoverflow icon"></i>
 </a>
@@ -205,9 +205,9 @@ title="stackoverflow icon"></i>
 </a>
 {{end}}
 
-{{ if .Params.writerGithub }}
+{{ if .Params.writer_github }}
 <a class="github" target="_blank"
-href="{{ .Params.writerGithub }}">
+href="{{ .Params.writer_github }}">
 <i class="fab fa-github"
 title="github icon"></i>
 </a>
@@ -219,9 +219,9 @@ title="github icon"></i>
 </a>
 {{end}}
 
-{{ if .Params.writerPinterest }}
+{{ if .Params.writer_pinterest }}
 <a class="pinterest" target="_blank"
-href="{{ .Params.writerPinterest }}">
+href="{{ .Params.writer_pinterest }}">
 <i class="fab fa-pinterest"
 title="pinterest icon"></i>
 </a>
