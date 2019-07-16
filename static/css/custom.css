@@ -5,3 +5,13 @@
     padding-top: 0.2em;
 }
 
+.menu-secondary-items:before {
+    content: none !important;
+}
+
+.author-meta .author a{
+    font-weight: 700 !important;    
+}
+.author-meta a:link, .author-meta a:visited{
+    color: #ffffff !important;
+}
