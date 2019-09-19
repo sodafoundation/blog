@@ -1,4 +1,4 @@
-baseurl = "https://opensds-blog-v2.netlify.com/"
+baseurl = "https://opensds-blog.netlify.com/"
 title = "OpenSDS Blog"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"
