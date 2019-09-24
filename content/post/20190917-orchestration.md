@@ -4,6 +4,7 @@ draft = false
 image = "img/default-bg-wide.jpg"
 date = "2019-09-17T10:30:00+05:30"
 title = "OpenSDS Orchestration - Simplifying Complex Data Management Tasks"
+slug = "orchestration-simplifying-complex-data-management-tasks"
 description = "To reduce manual intervention and provide ease of use, orchestration helps to streamline and optimize frequent, repeatable processes to ensure accurate and faster execution of services."
 writer = "Himanshu, Ashit"
 categories = [ "Blog", "Features", "Orchestration"]
