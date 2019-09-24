@@ -1,7 +1,7 @@
 +++
 showonlyimage = true
 draft = false
-image = "img/orchestration-arch-design.png"
+image = "img/default-bg-wide.png"
 date = "2019-09-17T10:30:00+05:30"
 title = "OpenSDS Orchestration - Simplifying Complex Data Management Tasks"
 description = "To reduce manual intervention and provide ease of use, orchestration helps to streamline and optimize frequent, repeatable processes to ensure accurate and faster execution of services."
@@ -35,7 +35,7 @@ OpenSDS Orchestration provides seamless and simple ways to automate complex data
 
 ![OpenSDS Orchestration Manager Architecture diagram](/img/orchestration-arch-design.png)
 
-## OpenSDS Orchestration Manager 
+## OpenSDS Orchestration Manager
 
 OpenSDS Orchestration Manager comprises of the following components:  
 
