@@ -1,7 +1,7 @@
 +++
 showonlyimage = true
 draft = false
-image = "img/default-bg-wide.png"
+image = "img/default-bg-wide.jpg"
 date = "2019-09-17T10:30:00+05:30"
 title = "OpenSDS Orchestration - Simplifying Complex Data Management Tasks"
 description = "To reduce manual intervention and provide ease of use, orchestration helps to streamline and optimize frequent, repeatable processes to ensure accurate and faster execution of services."
