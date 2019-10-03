@@ -1,10 +1,40 @@
-.site-description{
+body{
+    background: #ececec;
+}
+h2 {
+    font-size: 1.75em;
+}
+div#loop-container{
+    background: #ececec;
+}
+.top-navigation{
+    background: #74B55A;
+}
+.site-title{
+    opacity: 1;
+}
+.social-media-icons a{
+    opacity: 0.7;
+}
+#site-footer .social-media-icons a{
+    color: #151515;
+}
+.site-header .site-description{
     margin-top: 3em;
+    color: #151515;
 }
 .logo-container{
     padding-top: 0.2em;
 }
-
+#menu-primary-items a{
+    color: #151515;
+    opacity: 0.8;
+}
+#menu-secondary-items a{
+    color: #ececec;
+}
+.menu-secondary-items .menu-item a:link {
+}
 .menu-secondary-items:before {
     content: none !important;
 }
@@ -14,4 +44,21 @@
 }
 .author-meta a:link, .author-meta a:visited{
     color: #ffffff !important;
+}
+.excerpt{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+@media (min-width: 56.25em){
+.entry-header h1.entry-title {
+    font-size: 2em !important;
+}
+}
+
+@media (min-width: 37.5em){
+.excerpt-title {
+    font-size: 1.6em !important;
+    line-height: 1.4em !important;
+}
 }
