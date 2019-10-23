@@ -12,7 +12,7 @@ paginate = 5 #frontpage pagination
 [privacy]
   # Google Analytics privacy settings - https://gohugo.io/about/hugo-and-gdpr/index.html#googleanalytics
   [privacy.googleAnalytics]
-    # set to true to disable service 
+    # set to true to disable service
     disable = false
     # set to true to meet General Data Protection Regulation (GDPR)
     anonymizeIP = false
@@ -136,4 +136,34 @@ paginate = 5 #frontpage pagination
     # stackoverflow = "full profile url in stackoverflow"
     # instagram     = "full url"
     # github        = "full url"
+    # pinterest     = "full profile url in pinterest"
+
+    [params.writers."Pravin Ranjan"]
+    link = ""
+    email = "pravinranjan10@gmail.com"
+    bio = [
+      "Developer, OpenSDS"
+    ]
+    facebook      = "https://www.facebook.com/pravni.jhunna"
+    # googleplus    = "full profile url in googleplus"
+    twitter       = "https://twitter.com/10PravinRanjan"
+    linkedin      = "https://www.linkedin.com/in/pravinranjan10/"
+    stackoverflow = "https://stackoverflow.com/users/4519003/pravin"
+    # instagram     = "full url"
+    github        = "https://github.com/PravinRanjan10"
+    # pinterest     = "full profile url in pinterest"
+
+    [params.writers."Joseph Vazhappilly"]
+    link = ""
+    email = "josephvp@gmail.com"
+    bio = [
+      "Developer, OpenSDS"
+    ]
+    # facebook      = "full lukas profile url in facebook"
+    # googleplus    = "full profile url in googleplus"
+    # twitter       = "https://twitter.com/sanilkumard"
+    # linkedin      = "full url"
+    # stackoverflow = "full profile url in stackoverflow"
+    # instagram     = "full url"
+    github        = "https://github.com/joseph-v/"
     # pinterest     = "full profile url in pinterest"
