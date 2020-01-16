@@ -33,7 +33,7 @@ paginate = 5 #frontpage pagination
     "The Open Autonomous Data Platform"
   ]
   copyright = [
-    "&copy; 2019 OpenSDS",
+    "&copy; 2020 OpenSDS",
     "Nederburg Hugo Theme by [Appernetic](https://appernetic.io)."
   ]
 
