@@ -26,6 +26,10 @@ div#loop-container{
 .logo-container{
     padding-top: 0.2em;
 }
+.site-title img {
+    max-width: 12em;
+    max-height: 5em;
+}
 
 #menu-primary-items a{
     color: #151515;
@@ -55,12 +59,6 @@ div#loop-container{
 .entry-header h1.entry-title {
     font-size: 2em !important;
 }
-}
-
-@media (min-width: 50em)
-.site-title img {
-    max-width: 12em;
-    max-height: 5em;
 }
 
 @media (min-width: 37.5em){
