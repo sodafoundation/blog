@@ -1,6 +1,6 @@
-# OpenSDS Blog
+# SODA Foundation Blog
 
-This is the OpenSDS blog repository.  
+This is the SODA Foundation blog repository.  
 
 This website is being run as a Hugo generated website hosted on Netlify.  
 
