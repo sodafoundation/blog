@@ -21,7 +21,7 @@ paginate = 5 #frontpage pagination
 
 [params]
   # Site Logo
-  logo = "/img/logo.png"
+  logo = "/img/SODA_logo.png"
   # Unmark to use post folder for images. Default is static folder.
   #usepostimgfolder = true
   slogan = "The official blog for the SODA Foundation project."
